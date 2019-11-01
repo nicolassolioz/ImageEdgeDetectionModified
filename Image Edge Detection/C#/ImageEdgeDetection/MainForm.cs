@@ -21,12 +21,16 @@ namespace ImageEdgeDetection
         private Bitmap originalBitmap = null;
         private Bitmap previewBitmap = null;
         private Bitmap resultBitmap = null;
+      
         
         public MainForm()
         {
             InitializeComponent();
 
             cmbEdgeDetection.SelectedIndex = 0;
+
+            ControlCmbEdgeDetection();
+
         }
 
         private void btnOpenOriginal_Click(object sender, EventArgs e)
@@ -190,6 +194,9 @@ namespace ImageEdgeDetection
                     resultBitmap = bitmapResult;
                 }
             }
+
+            //Control if first filter is selected or not
+            ControlCmbEdgeDetection();
         }
 
         private void NeighbourCountValueChangedEventHandler(object sender, EventArgs e)
@@ -197,9 +204,77 @@ namespace ImageEdgeDetection
             ApplyFilter(true);
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxBlackAndWhiteFilter_CheckedChanged(object sender, EventArgs e)
         {
 
+            applyFirstFilter();
+
         }
+
+        private void checkBoxSwapFilter_CheckedChanged(object sender, EventArgs e)
+        {
+
+            applyFirstFilter();
+            
+        }
+
+        private void checkBoxNoneFilter_CheckedChanged(object sender, EventArgs e)
+        {
+
+            applyFirstFilter();
+        }
+
+        private void ControlCmbEdgeDetection()
+        {
+            if(checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked") && checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked") && checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked"))
+            {
+                cmbEdgeDetection.Enabled = false;
+            }
+            else
+            {
+                cmbEdgeDetection.Enabled = true;
+            }
+
+            
+        }
+
+        private void applyFirstFilter()
+        {
+            Bitmap toTreat = originalBitmap;
+
+            //If Check box "none" is checked then unchecked et disabled others checkbox
+            if(checkBoxNoneFilter.CheckState.ToString().Equals("Checked"))
+            {
+                checkBoxRainbowFilter.Checked = false ;
+                checkBoxSwapFilter.Checked = false ;
+
+                checkBoxRainbowFilter.Enabled = false;
+                checkBoxSwapFilter.Enabled = false;
+                
+            }
+            else
+            {
+                checkBoxRainbowFilter.Enabled = true;
+                checkBoxSwapFilter.Enabled = true;
+
+                if (checkBoxRainbowFilter.CheckState.ToString().Equals("Checked"))
+                {
+                    toTreat = Filters.RainbowFilter(toTreat);
+                }
+
+                if (checkBoxSwapFilter.CheckState.ToString().Equals("Checked"))
+                {
+                    toTreat = Filters.Swap(toTreat);
+                }
+            }
+           
+
+
+            previewBitmap = toTreat;
+
+
+            ApplyFilter(true);
+        }
+
     }
 }

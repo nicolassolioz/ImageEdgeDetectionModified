@@ -32,8 +32,9 @@
             this.btnOpenOriginal = new System.Windows.Forms.Button();
             this.btnSaveNewImage = new System.Windows.Forms.Button();
             this.cmbEdgeDetection = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxRainbowFilter = new System.Windows.Forms.CheckBox();
+            this.checkBoxSwapFilter = new System.Windows.Forms.CheckBox();
+            this.checkBoxNoneFilter = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,33 +103,46 @@
             this.cmbEdgeDetection.TabIndex = 20;
             this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
             // 
-            // checkBox1
+            // checkBoxRainbowFilter
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(689, 96);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 24);
-            this.checkBox1.TabIndex = 21;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBoxRainbowFilter.AutoSize = true;
+            this.checkBoxRainbowFilter.Location = new System.Drawing.Point(634, 93);
+            this.checkBoxRainbowFilter.Name = "checkBoxRainbowFilter";
+            this.checkBoxRainbowFilter.Size = new System.Drawing.Size(131, 24);
+            this.checkBoxRainbowFilter.TabIndex = 21;
+            this.checkBoxRainbowFilter.Text = "Rainbow filter";
+            this.checkBoxRainbowFilter.UseVisualStyleBackColor = true;
+            this.checkBoxRainbowFilter.CheckedChanged += new System.EventHandler(this.checkBoxBlackAndWhiteFilter_CheckedChanged);
             // 
-            // checkBox2
+            // checkBoxSwapFilter
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(689, 137);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(113, 24);
-            this.checkBox2.TabIndex = 22;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxSwapFilter.AutoSize = true;
+            this.checkBoxSwapFilter.Location = new System.Drawing.Point(634, 137);
+            this.checkBoxSwapFilter.Name = "checkBoxSwapFilter";
+            this.checkBoxSwapFilter.Size = new System.Drawing.Size(109, 24);
+            this.checkBoxSwapFilter.TabIndex = 22;
+            this.checkBoxSwapFilter.Text = "Swap filter";
+            this.checkBoxSwapFilter.UseVisualStyleBackColor = true;
+            this.checkBoxSwapFilter.CheckedChanged += new System.EventHandler(this.checkBoxSwapFilter_CheckedChanged);
+            // 
+            // checkBoxNoneFilter
+            // 
+            this.checkBoxNoneFilter.AutoSize = true;
+            this.checkBoxNoneFilter.Location = new System.Drawing.Point(634, 51);
+            this.checkBoxNoneFilter.Name = "checkBoxNoneFilter";
+            this.checkBoxNoneFilter.Size = new System.Drawing.Size(107, 24);
+            this.checkBoxNoneFilter.TabIndex = 23;
+            this.checkBoxNoneFilter.Text = "None filter";
+            this.checkBoxNoneFilter.UseVisualStyleBackColor = true;
+            this.checkBoxNoneFilter.CheckedChanged += new System.EventHandler(this.checkBoxNoneFilter_CheckedChanged);
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(823, 675);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxNoneFilter);
+            this.Controls.Add(this.checkBoxSwapFilter);
+            this.Controls.Add(this.checkBoxRainbowFilter);
             this.Controls.Add(this.cmbEdgeDetection);
             this.Controls.Add(this.btnSaveNewImage);
             this.Controls.Add(this.btnOpenOriginal);
@@ -151,8 +165,9 @@
         private System.Windows.Forms.Button btnOpenOriginal;
         private System.Windows.Forms.Button btnSaveNewImage;
         private System.Windows.Forms.ComboBox cmbEdgeDetection;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBoxRainbowFilter;
+        private System.Windows.Forms.CheckBox checkBoxSwapFilter;
+        private System.Windows.Forms.CheckBox checkBoxNoneFilter;
     }
 }
 
