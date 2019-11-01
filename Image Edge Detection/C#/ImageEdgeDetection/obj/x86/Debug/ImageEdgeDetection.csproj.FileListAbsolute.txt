@@ -13,3 +13,11 @@ C:\Users\yannc\Documents\HES\semestre7\Unit tests\Image Edge Detection\C#\ImageE
 C:\Users\yannc\Documents\HES\semestre7\Unit tests\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
 C:\Users\yannc\Documents\HES\semestre7\Unit tests\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\Users\yannc\Documents\HES\semestre7\Unit tests\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csprojAssemblyReference.cache
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
