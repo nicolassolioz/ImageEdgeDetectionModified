@@ -9,6 +9,7 @@ namespace TestImageEdgeDetection
         [TestMethod]
         public void TestMethod1()
         {
+            //Hello
         }
     }
 }
