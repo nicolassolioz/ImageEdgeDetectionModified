@@ -226,7 +226,7 @@ namespace ImageEdgeDetection
 
         private void ControlCmbEdgeDetection()
         {
-            if(checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked") && checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked") && checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked"))
+            if(checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked") && checkBoxRainbowFilter.CheckState.ToString().Equals("Unchecked") && checkBoxSwapFilter.CheckState.ToString().Equals("Unchecked"))
             {
                 cmbEdgeDetection.Enabled = false;
             }
