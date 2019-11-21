@@ -11,9 +11,9 @@ namespace ImageEdgeDetection
         // Swap Filter
         public static Bitmap Swap(Bitmap bmp)
         {
-
             Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
 
+            Console.WriteLine(temp.GetHashCode());
 
             for (int i = 0; i < bmp.Width; i++)
             {
@@ -25,6 +25,7 @@ namespace ImageEdgeDetection
                 }
 
             }
+
             return temp;
         }
 

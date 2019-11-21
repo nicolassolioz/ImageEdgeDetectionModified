@@ -21,3 +21,10 @@ C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\Image
 C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
 C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\Users\yannc\Documents\GitHub\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
