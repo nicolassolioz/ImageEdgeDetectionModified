@@ -19,12 +19,12 @@ namespace TestImageEdgeDetection
         public void TestSwap()
         {
 
-            Bitmap bmp = new Bitmap(@"C:\Users\bercl\OneDrive\Desktop\index.jpg");
+            Bitmap bmp = new Bitmap(@"C:\Users\Bornatch\Pictures\0000000.jpg");
             Bitmap img = bmp;
             Bitmap result;
 
             result = Filters.Swap(img);
-            Assert.AreEqual(33179744, result.GetHashCode());
+            Assert.AreEqual(65543281, result.GetHashCode());
 
         }
 
@@ -32,12 +32,12 @@ namespace TestImageEdgeDetection
         public void TestRainbowFilter()
         {
 
-            Bitmap bmp = new Bitmap(@"C:\Users\bercl\OneDrive\Desktop\index.jpg");
+            Bitmap bmp = new Bitmap(@"C:\Users\Bornatch\Pictures\0000000.jpg");
             Bitmap img = bmp;
             Bitmap result;
 
             result = Filters.RainbowFilter(img);
-            Assert.AreEqual(55422917, result.GetHashCode());
+            Assert.AreEqual(55803581, result.GetHashCode());
 
         }
     }

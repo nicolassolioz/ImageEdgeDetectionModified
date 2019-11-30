@@ -339,3 +339,11 @@ ASALocalRun/
 DemoWebApi2311/DemoWebApi/DemoWebApi/DemoWebApi.csproj
 DemoWebApi2311/DemoWebApi/DemoWebApi/Web.config
 Image Edge Detection/C#/.vs/ImageEdgeDetection/v16/.suo
+*.csproj
+Image Edge Detection/C#/TestImageEdgeDetection/packages.config
+*.pdb
+Image Edge Detection/C#/ImageEdgeDetection/obj/x86/Debug/ImageEdgeDetection.csproj.GenerateResource.cache
+*.txt
+*.pdb
+*.ide
+Image Edge Detection/C#/.vs/ImageEdgeDetection/v16/.suo
