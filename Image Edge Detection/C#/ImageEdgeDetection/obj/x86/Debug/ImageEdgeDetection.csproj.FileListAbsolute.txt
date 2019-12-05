@@ -28,3 +28,11 @@ C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Ima
 C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
 C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\Users\bercl\OneDrive\Documents\UnitTest\ProjetAlexYann\ImageEdgeDetection\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csprojAssemblyReference.cache
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\Users\Bornatch\Source\Repos\ImageEdgeDetectionModified\Image Edge Detection\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb

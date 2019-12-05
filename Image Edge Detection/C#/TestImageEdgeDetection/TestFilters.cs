@@ -39,7 +39,7 @@ namespace TestImageEdgeDetection
             result = Filters.RainbowFilter(img);
             Assert.AreEqual(55803581, result.GetHashCode());
 
-        }
+        }   
     }
 }
 

@@ -36,9 +36,13 @@ namespace ImageEdgeDetection
         private void btnOpenOriginal_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            //add jpeg
             ofd.Title = "Select an image file.";
-            ofd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-            ofd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
+            ofd.Filter = "Png Images(*.png)|*.png|" +
+                            "Jpeg Images(*.jpg)|*.jpg|" +
+                            "Jpeg Images(*.jpeg)|*.jpeg|" +
+                            "Bitmap Images(*.bmp)|*.bmp";
+
 
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -51,7 +55,12 @@ namespace ImageEdgeDetection
 
                 ApplyFilter(true);
             }
+
+            //disable checkbox when no picture load
+            if (previewBitmap != null)
+                enableCheckboxes();
         }
+
 
         private void btnSaveNewImage_Click(object sender, EventArgs e)
         {
@@ -61,9 +70,10 @@ namespace ImageEdgeDetection
             {
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Title = "Specify a file name and file path";
-                sfd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-                sfd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
-
+                sfd.Filter = "Png Images(*.png)|*.png|" +
+                            "Jpeg Images(*.jpg)|*.jpg|" +
+                            "Jpeg Images(*.jpeg)|*.jpeg|" +
+                            "Bitmap Images(*.bmp)|*.bmp";
                 if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     string fileExtension = Path.GetExtension(sfd.FileName).ToUpper();
@@ -224,6 +234,14 @@ namespace ImageEdgeDetection
             applyFirstFilter();
         }
 
+        //manage checkbox
+        private void enableCheckboxes()
+        {
+            checkBoxNoneFilter.Enabled = true;
+            checkBoxRainbowFilter.Enabled = true;
+            checkBoxSwapFilter.Enabled = true;
+        }
+
         private void ControlCmbEdgeDetection()
         {
             if(checkBoxNoneFilter.CheckState.ToString().Equals("Unchecked") && checkBoxRainbowFilter.CheckState.ToString().Equals("Unchecked") && checkBoxSwapFilter.CheckState.ToString().Equals("Unchecked"))
@@ -233,9 +251,7 @@ namespace ImageEdgeDetection
             else
             {
                 cmbEdgeDetection.Enabled = true;
-            }
-
-            
+            }            
         }
 
         private void applyFirstFilter()
@@ -266,15 +282,16 @@ namespace ImageEdgeDetection
                 {
                     toTreat = Filters.Swap(toTreat);
                 }
-            }
-           
-
+            }    
 
             previewBitmap = toTreat;
-
-
+            
             ApplyFilter(true);
         }
 
+        private void picPreview_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

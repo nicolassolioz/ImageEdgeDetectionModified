@@ -50,6 +50,7 @@
             this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 13;
             this.picPreview.TabStop = false;
+            this.picPreview.Click += new System.EventHandler(this.picPreview_Click);
             // 
             // btnOpenOriginal
             // 
@@ -99,16 +100,17 @@
             "Kirsch Grayscale"});
             this.cmbEdgeDetection.Location = new System.Drawing.Point(168, 627);
             this.cmbEdgeDetection.Name = "cmbEdgeDetection";
-            this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 41);
+            this.cmbEdgeDetection.Size = new System.Drawing.Size(288, 32);
             this.cmbEdgeDetection.TabIndex = 20;
             this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
             // 
             // checkBoxRainbowFilter
             // 
             this.checkBoxRainbowFilter.AutoSize = true;
+            this.checkBoxRainbowFilter.Enabled = false;
             this.checkBoxRainbowFilter.Location = new System.Drawing.Point(634, 93);
             this.checkBoxRainbowFilter.Name = "checkBoxRainbowFilter";
-            this.checkBoxRainbowFilter.Size = new System.Drawing.Size(131, 24);
+            this.checkBoxRainbowFilter.Size = new System.Drawing.Size(90, 17);
             this.checkBoxRainbowFilter.TabIndex = 21;
             this.checkBoxRainbowFilter.Text = "Rainbow filter";
             this.checkBoxRainbowFilter.UseVisualStyleBackColor = true;
@@ -117,9 +119,10 @@
             // checkBoxSwapFilter
             // 
             this.checkBoxSwapFilter.AutoSize = true;
+            this.checkBoxSwapFilter.Enabled = false;
             this.checkBoxSwapFilter.Location = new System.Drawing.Point(634, 137);
             this.checkBoxSwapFilter.Name = "checkBoxSwapFilter";
-            this.checkBoxSwapFilter.Size = new System.Drawing.Size(109, 24);
+            this.checkBoxSwapFilter.Size = new System.Drawing.Size(75, 17);
             this.checkBoxSwapFilter.TabIndex = 22;
             this.checkBoxSwapFilter.Text = "Swap filter";
             this.checkBoxSwapFilter.UseVisualStyleBackColor = true;
@@ -128,9 +131,10 @@
             // checkBoxNoneFilter
             // 
             this.checkBoxNoneFilter.AutoSize = true;
+            this.checkBoxNoneFilter.Enabled = false;
             this.checkBoxNoneFilter.Location = new System.Drawing.Point(634, 51);
             this.checkBoxNoneFilter.Name = "checkBoxNoneFilter";
-            this.checkBoxNoneFilter.Size = new System.Drawing.Size(107, 24);
+            this.checkBoxNoneFilter.Size = new System.Drawing.Size(74, 17);
             this.checkBoxNoneFilter.TabIndex = 23;
             this.checkBoxNoneFilter.Text = "None filter";
             this.checkBoxNoneFilter.UseVisualStyleBackColor = true;

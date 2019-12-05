@@ -332,6 +332,7 @@ namespace ImageEdgeDetection
         }
 
         public static Bitmap LaplacianOfGaussianFilter(this Bitmap sourceBitmap)
+        
         {
             Bitmap resultBitmap = ExtBitmap.ConvolutionFilter(sourceBitmap, 
                                   Matrix.LaplacianOfGaussian, 1.0, 0, true);
